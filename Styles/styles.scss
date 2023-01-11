@@ -12,5 +12,8 @@ header button {
 // }
 
 .contact  {
-    @include flexCenter(row, purple);
+    @extend header;
+    background-color: orange;
+    // read top to bottom, whatever is above last line will be overridden
+    // background-color: red;
 }
