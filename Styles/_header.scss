@@ -1,7 +1,16 @@
-header{
-    background-color: green;
+// function to align everything and convert to flex-box
+@mixin flexCenter($direction, $backgroundColor) {
     display: flex;
     justify-content: center;
+    align-items: center;
+    flex-direction: $direction;
+    background-color: $backgroundColor;
+}
+
+
+header{
+    @include flexCenter(column, green);
+    height: 100vh;
     color: $textColor;
 
     button{
